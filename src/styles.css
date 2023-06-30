@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: rgb(219, 230, 242);
+  margin: 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; */
+}
+h1 {
+  text-align: center;
+}
+.currency-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.input {
+  padding: 15px;
+  border-radius: 20px 0 0 20px;
+  border-color: transparent;
+  transition: ease-out;
+}
+.input:focus {
+  border-color: rgb(71, 135, 89);
+  padding: 15px;
+  transition: ease-in;
+}
+.curr_value {
+  padding: 15px;
+  border-radius: 0 20px 20px 0;
+  border-color: transparent;
+}
+select {
+  color: rgb(139, 135, 135);
+  text-align: center;
+}
+.result {
+  margin-top: 20px;
+}
+.main_container {
+  border: 3px solid rgb(118, 163, 236);
+  box-shadow: 10px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  max-width: 400px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(118, 163, 236);
+}
+.flex_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}

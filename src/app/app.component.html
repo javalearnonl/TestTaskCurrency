@@ -1,0 +1,50 @@
+<div class="header">
+  Exchange Rates:
+  <div class="exchange-rate"><span>USD:</span> {{ exchangeRates?.USD }}</div>
+  <div class="exchange-rate"><span>EUR:</span> {{ exchangeRates?.EUR }}</div>
+  <div class="exchange-rate"><span>UAH:</span> {{ exchangeRates?.UAH }}</div>
+</div>
+<div class="flex_container">
+  <div class="main_container">
+    <h1>Currency converter</h1>
+    <div class="currency-container">
+      <div class="currency-input">
+        <input
+          type="number"
+          class="input"
+          [(ngModel)]="amount1"
+          (input)="convertCurrency($event, 'amount1')"
+        />
+        <select
+          [(ngModel)]="currency1"
+          class="curr_value"
+          (change)="convertCurrency($event, 'currency1')"
+        >
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+      <div class="currency-input">
+        <input
+          class="input"
+          type="number"
+          [(ngModel)]="amount2"
+          (input)="convertCurrency($event, 'amount2')"
+        />
+        <select
+          class="curr_value"
+          [(ngModel)]="currency2"
+          (change)="convertCurrency($event, 'currency2')"
+        >
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+    </div>
+    <div class="result">
+      Your result: {{ amount1 }} {{ currency1 }} = {{ amount2 }} {{ currency2 }}
+    </div>
+  </div>
+</div>
